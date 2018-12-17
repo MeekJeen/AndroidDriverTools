@@ -13,6 +13,6 @@ module_driver_for_android是一个简单的android驱动,可以模块编译ko文
 #source build/envsetup.sh     
 #lunch xxx-userdebug
 
-3.模块编译
+3.模块编译   
 cd maodule_driver_for_android   
 make  
