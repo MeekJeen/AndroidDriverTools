@@ -1,4 +1,4 @@
-[CSDN链接](https://blog.csdn.net/u010164190/article/details/83900420)
+[CSDN链接](https://blog.csdn.net/u010164190/article/details/83900420)   
 module_driver_for_android是一个简单的android驱动,可以模块编译ko文件，还包含对ko签名文件具体步骤.
 
 1.Android7.0步骤
@@ -12,3 +12,7 @@ module_driver_for_android是一个简单的android驱动,可以模块编译ko文
 把Android7.0/build/envsetup.sh中的make()函数拷贝过来，替换了Android9.0/build/make/envsetup.sh中的make()函数即可。        
 #source build/envsetup.sh     
 #lunch xxx-userdebug
+
+3.模块编译
+# cd maodule_driver_for_android   
+# make  
