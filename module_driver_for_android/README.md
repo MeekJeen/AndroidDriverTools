@@ -13,6 +13,11 @@ module_driver_for_android是一个简单的android驱动,可以模块编译ko文
 #source build/envsetup.sh     
 #lunch xxx-userdebug
 
-3.模块编译   
+3.模块编译  
+cd android9.0/kernel/msm4.9
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- msm_defconfig  
+make prepare ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-  
+make scripts ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-  
+//编译kernel模块  
 cd maodule_driver_for_android   
 make  
