@@ -8,8 +8,8 @@ module_driver_for_android是一个简单的android驱动,可以模块编译ko文
 
 2.Android9.0需要修改下
 需要改的位置：android9.0/build/envsetup.sh是软连接
-真正的位置：android9.0/build/make/envsetup.sh中修改: function make(){...}
-function make()
+真正的位置：android9.0/build/make/envsetup.sh中修改: function make(){...} 
+function make() 
 {
     local start_time=$(date +"%s")
     $(get_make_command) "$@"
