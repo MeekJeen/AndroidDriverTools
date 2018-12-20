@@ -25,6 +25,6 @@ make xxx_linux_defconfig
 
 2.Makefile写法；唯一的不同如下：   
 MODNAME=print   
-KERNELDIR=~/linux/kernel //不同点   
+KERNELDIR=linux/kernel //不同点   
 ARCH=arm64   
-CROSS_COMPILE=~/linux/prebuilts/gcc/linux-x86/aarch64/gcc-aarch64-linux-gnu/bin/aarch64-linux-gnu-
+CROSS_COMPILE=linux/prebuilts/gcc/linux-x86/aarch64/gcc-aarch64-linux-gnu/bin/aarch64-linux-gnu-
