@@ -19,7 +19,11 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- msm_defconfig
 make prepare ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-  
 make scripts ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-  
 
-三、Linux平台kernel模块编译Makefile写法；唯一的不同如下：   
+三、Linux平台kernel模块编译
+1.kernel编译   
+make xxx_linux_defconfig   
+
+2.Makefile写法；唯一的不同如下：   
 MODNAME=print   
 KERNELDIR=~/linux/kernel //不同点   
 ARCH=arm64   
