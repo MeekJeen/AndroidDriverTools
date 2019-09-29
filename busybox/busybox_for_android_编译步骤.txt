@@ -1,0 +1,23 @@
+1.配置
+# cd busybox
+# cp configs/android_defconfig_ok .config
+
+2.在busybox里添加find和grep命令
+# make menuconfig
+---->Finding Utilities
+ ----> [*]find 
+注意：比如：vi/awk等命令可以根据需要,自行添加.
+
+3.修改arm交叉编译器
+在configs/android_defconfig_ok里修改,根据自己的编译环境修改.
+<1>交叉编译工具:
+CONFIG_CROSS_COMPILER_PREFIX="arm-linux-androideabi-"
+或者:
+CONFIG_CROSS_COMPILER_PREFIX="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-"
+CONFIG_SYSROOT="prebuilts/ndk/9/platforms/android-21/arch-arm"
+
+<3>编译的时候有可能会报错，可以直接在prebuilts/路径下搜头文件拷贝进来就行了
+
+4.编译:编译后busybox生成在当前目录下.
+# make -j32
+
