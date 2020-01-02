@@ -1,6 +1,6 @@
 MODNAME=print
 #1.Android平台写法
-KERNELDIR=out/target/product/msmxxx/obj/kernel/msm-3.18
+KERNELDIR=~/ubuntu/Android/out/target/product/msmxxx/obj/kernel/msm-3.18
 ARCH=arm64
 CROSS_COMPILE=aarch64-linux-android-
 
